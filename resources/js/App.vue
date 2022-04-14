@@ -1,8 +1,15 @@
 <template>
   <div class="container">
-    <h3>LARAVEL VUE</h3>
+    <Menu />
+    <router-view> </router-view>
   </div>
 </template>
 <script>
-export default {};
+import Menu from "./Menu";
+export default {
+  components: {
+    Menu,
+  },
+};
 </script>
+
