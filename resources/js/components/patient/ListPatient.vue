@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="text-center">Liste des Patients</h2>
-    <table class="table">
+    <table class="table" id="example">
       <thead>
         <tr>
           <th>Nom</th>
@@ -41,6 +41,13 @@
   </div>
 </template>
 <script>
+//Bootstrap and jQuery libraries
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js';
+//Datatable Modules
+import "datatables.net-dt/js/dataTables.dataTables"
+import "datatables.net-dt/css/jquery.dataTables.min.css"
+import $ from 'jquery';
 export default {
   data() {
     return {
@@ -65,6 +72,7 @@ export default {
     getPatients() {
       this.axios.get("http://127.0.0.1:8000/api/patients").then((response) => {
         this.Patients = response.data;
+        $(function() {$('#example').DataTable();});
       });
     },
   },
