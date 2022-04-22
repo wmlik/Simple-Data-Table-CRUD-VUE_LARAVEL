@@ -36,6 +36,8 @@ class PatientController extends Controller
                 'date_naiss' => $request->input('date_naiss'),
                 'adresse' => $request->input('adresse'),
                 'tel' => $request->input('tel'),
+                'image' => $request->input('image'),
+                
         ]);
         $patient->save();
         return response()->json('Patient créé !');

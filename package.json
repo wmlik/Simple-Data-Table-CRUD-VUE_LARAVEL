@@ -26,7 +26,10 @@
     },
     "dependencies": {
         "datatables.net-dt": "^1.11.5",
+        "filepond": "^4.30.3",
+        "filepond-plugin-image-preview": "^4.6.11",
         "jquery": "^3.6.0",
+        "vue-filepond": "^7.0.3",
         "vue-router": "^4.0.13"
     }
 }

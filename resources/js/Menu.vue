@@ -17,8 +17,13 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link pr-3" to="/patients/liste">
+          <router-link class="nav-link navbar-brand pr-3"  to="/patients/liste">
             Patients
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link navbar-brand pr-3" to="/patients/AddPatient">
+            AddPatient
           </router-link>
         </li>
       </ul>

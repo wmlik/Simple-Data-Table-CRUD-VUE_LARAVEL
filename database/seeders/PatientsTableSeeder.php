@@ -25,6 +25,7 @@ class PatientsTableSeeder extends Seeder
             "date_naiss" => $faker->date($format = 'Y-m-d', $max = 'now'),
             "adresse" => $faker->address,
             "tel" => $faker->phoneNumber,
+            "image" => $faker->randomElement(["image1.jpg", " image2.jpg", " image3.jpg", "image4.jpg", "image5"]),
         ]);
     }
 }

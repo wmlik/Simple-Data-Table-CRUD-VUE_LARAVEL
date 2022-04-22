@@ -23,6 +23,7 @@ class CreatePatientsTable extends Migration
             $table->date('date_naiss');
             $table->text('adresse');
             $table->string('tel');
+            $table->string('image');
             $table->timestamps();
         });
     }

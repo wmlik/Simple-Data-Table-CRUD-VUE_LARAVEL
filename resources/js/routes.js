@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from "./Home";
 import ListPatient from "./components/patient/ListPatient.vue";
+import AddPatient from "./components/patient/AddPatient.vue";
+import EditPatient from "./components/patient/EditPatient.vue";
 const routes = [
     {
         path: '/',
@@ -9,8 +11,18 @@ const routes = [
     },
     {
         path: '/patients/liste',
-        name: 'Patients',
+        name: 'patients',
         component: ListPatient
+    },
+    {
+    path: '/patients/AddPatient',
+        name: 'addPatient',
+        component: AddPatient
+    },
+    {
+        path: '/patients/editPatient',
+        name: 'editPatient',
+        component: EditPatient
     }
 
 ];
