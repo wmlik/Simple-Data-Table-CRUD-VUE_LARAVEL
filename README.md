@@ -1,3 +1,11 @@
+#  Simple-Data-Table-CRUD-VUE_LARAVEL
+
+run : "npm install"
+
+run : "php artisan serve"
+
+run : "npm run watch"
+
 composer create-project --prefer-dist laravel/laravel=8.* miniProjet1
 
 php artisan serve
