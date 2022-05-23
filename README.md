@@ -1,6 +1,6 @@
 #  Simple-Data-Table-CRUD-VUE_LARAVEL
 
-to run project:
+## To run project:
 
 1- import data base mini_projet_1_mlik_wajdi.sql
 
