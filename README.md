@@ -1,18 +1,26 @@
 #  Simple-Data-Table-CRUD-VUE_LARAVEL
 
-run : "npm install"
+to run project:
 
-run : "php artisan serve"
+1- import data base mini_projet_1_mlik_wajdi.sql
 
-run : "npm run watch"
+2- clone repository
+
+3- run : "npm install"
+
+4- run : "php artisan serve"
+
+5- run : "npm run watch"
 
 
-
+to create new project:
 composer create-project --prefer-dist laravel/laravel=8.* miniProjet1
 
-https://github.com/fzaninotto/Faker        //fake data
+for fake data:
+https://github.com/fzaninotto/Faker        
 
-php artisan route:list  //to show route
+to show route
+php artisan route:list  
 
 
 
