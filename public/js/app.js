@@ -15335,6 +15335,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     onFileChange: function onFileChange(e) {
       this.image = e.target.files[0].name;
+      console.log(this.image);
     }
   }
 });
@@ -15402,7 +15403,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     onFileChange: function onFileChange(e) {
-      this.Patient.image = e.target.files[0].name;
+      this.image = e.target.files[0].name;
     },
     modifierPatient: function modifierPatient() {
       var _this2 = this;
@@ -15736,7 +15737,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 512
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.etat_civile]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "text",
+    type: "date",
     "class": "form-control",
     placeholder: "date_naiss",
     "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {

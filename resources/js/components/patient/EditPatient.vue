@@ -115,7 +115,7 @@ export default {
                 .then((res) => {
                     this.Patient = res.data;
                     this.num_securite_sociale =
-                        this.Patient.num_securite_sociale;
+                    this.Patient.num_securite_sociale;
                     this.caisse = this.Patient.caisse;
                     this.nom = this.Patient.nom;
                     this.prenom = this.Patient.prenom;
@@ -128,7 +128,7 @@ export default {
                 });
         },
         onFileChange(e) {
-            this.Patient.image = e.target.files[0].name;
+            this.image = e.target.files[0].name;
 
         },
         modifierPatient() {
@@ -142,7 +142,7 @@ export default {
                 adresse: this.adresse,
                 tel: this.tel,
                 image: this.image,
-                
+
             };
             this.axios
                 .put(

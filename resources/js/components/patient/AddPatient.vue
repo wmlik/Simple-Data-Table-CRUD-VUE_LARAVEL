@@ -42,7 +42,7 @@
         </div>
         <div class="form-group">
             <input
-                type="text"
+                type="date"
                 class="form-control"
                 placeholder="date_naiss"
                 v-model="date_naiss"
@@ -127,7 +127,7 @@ export default {
         },
         onFileChange(e) {
             this.image = e.target.files[0].name;
-
+            console.log(this.image)
         },
     },
 };
